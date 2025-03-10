@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./components/Home/Home"
 import Footer from "./components/Footer"
-import Jobs from "./components/JOBS/Jobs"
+import Jobs from "./components/Jobs/Jobs"
 import Requirements from "./components/Requirements/Requirements"
 
 function App() {
