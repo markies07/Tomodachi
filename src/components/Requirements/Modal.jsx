@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import close from './assets/close.svg'
 import resume from './assets/resume.png'
-import applicationform from './assets/applicationform.png'
-import crr from './assets/crr.png'
 import medical from './assets/medical.png'
 import vaccinationcard from './assets/vaccinationcard.png'
 import nbiclearance from './assets/nbiclearance.png'
@@ -27,8 +25,6 @@ function Modal({closeModal, setItem, selected}) {
 
     const images = {
         resume,
-        applicationform,
-        crr,
         medical,
         vaccinationcard,
         nbiclearance,

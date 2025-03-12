@@ -33,16 +33,6 @@ function Requirements() {
           </div>
 
           <div className='flex justify-between items-center bg-[#D9D9D9] p-3'>
-            <p className='font-bold pr-3 text-sm sm:text-base'>Application Form</p>
-            <button onClick={() => toggleModal('applicationform')} className='text-xs cursor-pointer bg-[#990000] font-medium px-3 py-2 text-white'>VIEW <br className='sm:hidden' /> SAMPLE</button>
-          </div>
-
-          <div className='flex justify-between items-center bg-[#D9D9D9] p-3'>
-            <p className='font-bold pr-3 text-sm sm:text-base'>CRR</p>
-            <button onClick={() => toggleModal('crr')} className='text-xs cursor-pointer bg-[#990000] font-medium px-3 py-2 text-white'>VIEW <br className='sm:hidden' /> SAMPLE</button>
-          </div>
-
-          <div className='flex justify-between items-center bg-[#D9D9D9] p-3'>
             <p className='font-bold pr-3 text-sm sm:text-base'>Medical</p>
             <button onClick={() => toggleModal('medical')} className='text-xs cursor-pointer bg-[#990000] font-medium px-3 py-2 text-white'>VIEW <br className='sm:hidden' /> SAMPLE</button>
           </div>
