@@ -7,6 +7,7 @@ import Jobs from "./components/Jobs/Jobs"
 import Requirements from "./components/Requirements/Requirements"
 import Contact from "./components/Contact/Contact"
 import { ToastContainer } from "react-toastify"
+import JobsAdmin from "./components/Admin/JobsAdmin"
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/jobs" element={<Jobs />}/>
+        <Route path="tomodachi/jobs" element={<JobsAdmin />}/>
         <Route path="/requirements" element={<Requirements />}/>
         <Route path="/contact" element={<Contact />}/>
       </Routes>

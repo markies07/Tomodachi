@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import banner from './assets/banner.png'
-import image1 from './assets/image1.svg'
+import banner from './assets/banner.webp'
+import image1 from './assets/image1.jpeg'
 import image2 from './assets/image2.svg'
 import down from './assets/down.svg'
 import mission from './assets/mission.png'
@@ -14,12 +14,21 @@ import phisonic from './assets/phisonic.png'
 import rushtek from './assets/rushtek.png'
 import bg from './assets/bg.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Home() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+
+    useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+    }, []);
+
 
 
     return (
@@ -33,26 +42,26 @@ function Home() {
             </div>
 
             {/* WHO WE ARE - WHAT WE DO */}
-            <div className='pt-7 flex flex-col sm:px-10 items-center justify-center'>
+            <div className='pt-7 pb-4 overflow-x-hidden flex flex-col sm:px-10 items-center justify-center'>
                 <p className='font-extrabold sm:text-lg md:text-xl lg:text-2xl border-b-[3px] px-2 border-[#FF0000]'>Who We Are - What We Do</p>
 
                 {/* WHO WE ARE */}
-                <div className='flex flex-col items-center pt-7 lg:pt-10 max-w-[60rem]'>
+                <div data-aos="fade-right" className='flex flex-col items-center pt-7 lg:pt-10 max-w-[60rem]'>
                     <p className='font-extrabold md:hidden text-sm text-[#990000] pb-3 w-full text-center md:text-start'>WHO WE ARE</p>
                     <div className='flex flex-col md:pt-7 justify-center items-center md:gap-3 md:flex-row'>
                         <div className='w-[80%]  md:w-[50%] max-w-96 relative'>
-                            <p className='font-extrabold hidden md:block absolute -top-7 text-sm text-[#990000] pb-3 w-full text-start'>WHO WE ARE</p>
-                            <img className='w-full' src={image1} alt="" />
-                            <div className='w-full -z-10 h-full absolute -bottom-3 -right-3 bg-[#990000]' />
+                            <p className='font-extrabold pl-5 hidden md:block absolute -top-7 text-sm text-[#990000] pb-3 w-full text-start'>WHO WE ARE</p>
+                            <img className='w-[90%] mx-auto' src={image1} alt="" />
+                            <div className='w-[90%] -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
                         </div>
                         <p className=' md:px-0 leading-6 md:pl-10 w-[80%] md:w-[50%] pt-10 md:pt-0 text-sm text-center md:text-start '>
-                            Tomodachi Global Resources Inc. is a human resource company that was establish in 2014 and handles a wide array of services in the Philippines. Aside from providing our services to our clients being on call 24/7, we direct manage, control and supervise as Contract Manufacturer, in relation to the quality parameters and guidelines set ahead by our client.
+                            <span className='font-bold'>Tomodachi Global Resources Inc.</span> is a human resource company that was establish in 2014 and handles a wide array of services in the Philippines. Aside from providing our services to our clients being on call 24/7, we direct manage, control and supervise as Contract Manufacturer, in relation to the quality parameters and guidelines set ahead by our client.
                         </p>
                     </div>
                 </div>
 
                 {/* WHAT WE DO */}
-                <div className='flex flex-col items-center pt-7 lg:pt-10 max-w-[60rem]'>
+                <div data-aos="fade-left" className='flex flex-col items-center pt-7 lg:pt-10 max-w-[60rem]'>
                     <p className='font-extrabold md:hidden text-sm text-[#990000] pb-3 w-full text-center md:text-end'>WHAT WE DO</p>
                     <div className='flex flex-col md:pt-7 justify-center items-center md:gap-3 md:flex-row'>
                         <div className='w-[80%] order-2 md:order-1 md:w-[50%]'>
@@ -65,8 +74,8 @@ function Home() {
                         </div>    
                         <div className='w-[80%] order-1 md:order-2 md:w-[50%] max-w-96 relative'>
                             <p className='font-extrabold hidden md:block absolute -top-7 text-sm text-[#990000] pb-3 w-full text-end'>WHAT WE DO</p>
-                            <img className='w-full' src={image2} alt="" />
-                            <div className='w-full -z-10 h-full absolute -bottom-3 -right-3 bg-[#990000]' />
+                            <img className='w-[90%] mx-auto' src={image2} alt="" />
+                            <div className='w-[90%] -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
                         </div>
                         
                     </div>
@@ -81,14 +90,14 @@ function Home() {
                 <div className='pt-10 w-[80%] md:w-full md:max-w-[50rem] max-w-96 flex flex-col gap-7 md:flex-row'>
 
                     {/* OUR MISSION */}
-                    <div className='p-7 w-full flex flex-col items-center justify-center' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
+                    <div data-aos="zoom-in" className='p-7 w-full flex flex-col items-center justify-center' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
                         <img className='w-16' src={mission} alt="" />
                         <p className='font-bold text-[#990000] pt-3'>Our Mission</p>
                         <p className='text-center text-sm pt-5 leading-6'>We provide the most competitive and efficient workforce with personalized service according to our customers’ satisfaction.</p>
                     </div>
 
                     {/* OUR VISION */}
-                    <div className='p-7 w-full flex flex-col items-center justify-center md:justify-start' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
+                    <div data-aos="zoom-in" className='p-7 w-full flex flex-col items-center justify-center md:justify-start' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
                         <img className='w-20' src={vision} alt="" />
                         <p className='font-bold text-[#990000] pt-3'>Our Vision</p>
                         <p className='text-center text-sm pt-5 leading-6'>To be the global human resource provider of choice.</p>
@@ -105,31 +114,31 @@ function Home() {
 
                 {/* LOGO MOBILE */}
                 <div className='w-full flex justify-center items-center flex-col gap-6 p-10 md:hidden'>
-                    <img src={cnf} alt="" />
-                    <img src={cyber} alt="" />
+                    <img data-aos="zoom-out" src={cnf} alt="" />
+                    <img data-aos="zoom-out" src={cyber} alt="" />
                     <div className='flex items-center justify-center object-fill w-full gap-5'>
-                        <img className='object-fill' src={ma} alt="" />
-                        <img className='object-fill' src={klt} alt="" />
+                        <img data-aos="zoom-out" className='object-fill' src={ma} alt="" />
+                        <img data-aos="zoom-out" className='object-fill' src={klt} alt="" />
                     </div>
-                    <img src={phisonic} alt="" />
-                    <img src={rushtek} alt="" />
-                    <img src={kfi} alt="" />
+                    <img data-aos="zoom-out" src={phisonic} alt="" />
+                    <img data-aos="zoom-out" src={rushtek} alt="" />
+                    <img data-aos="zoom-out" src={kfi} alt="" />
                 </div>
 
                 {/* LOGO DESKTOP */}
                 <div className='w-full justify-center items-center flex-col gap-6 p-10 hidden md:flex'>
                     <div className='flex items-center gap-4'>
-                        <img src={cnf} alt="" />
-                        <img src={rushtek} alt="" />
+                        <img data-aos="zoom-out" src={cnf} alt="" />
+                        <img data-aos="zoom-out" src={rushtek} alt="" />
                     </div>
                     <div className='flex items-center justify-center object-fill w-full gap-5'>
-                        <img className='object-fill' src={ma} alt="" />
-                        <img src={kfi} alt="" />
-                        <img className='object-fill' src={klt} alt="" />
+                        <img data-aos="zoom-out" className='object-fill' src={ma} alt="" />
+                        <img data-aos="zoom-out" src={kfi} alt="" />
+                        <img data-aos="zoom-out" className='object-fill' src={klt} alt="" />
                     </div>
                     <div className='flex items-center gap-4'>
-                        <img src={cyber} alt="" />
-                        <img src={phisonic} alt="" />
+                        <img data-aos="zoom-out" src={cyber} alt="" />
+                        <img data-aos="zoom-out" src={phisonic} alt="" />
                     </div>
                     
                 </div>
