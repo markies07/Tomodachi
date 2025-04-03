@@ -8,6 +8,7 @@ import addjob from './assets/addjob.svg';
 import EditJob from './EditJob';
 import Swal from 'sweetalert2';
 import AddJob from './AddJob';
+import Login from './Login';
 
 function JobsAdmin() {
     const [jobsDasma, setJobsDasma] = useState([]);
@@ -240,6 +241,11 @@ function JobsAdmin() {
             {/* ADD JOB */}
             <div className={isAddJobOpen ? 'block' : 'hidden'}>
                 <AddJob closeAddJob={toggleAddJob} location={location} setLocation={setLocation} />
+            </div>
+
+            {/* LOGIN */}
+            <div>
+                <Login />
             </div>
 
         </div>

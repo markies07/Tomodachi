@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import close from './assets/close.svg';
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 import 'react-toastify/dist/ReactToastify.css';
 
 function MessageUs({ closeUI }) {
@@ -30,9 +31,9 @@ function MessageUs({ closeUI }) {
         emailjs.send("service_feg4pgq", "template_adt6qnn", templateParams, "9J_0pvP8gRKTJdK4C")
             .then((response) => {
                 setIsLoading(false);
-                toast.success("Message Sent Successfully!", { position: "top-right", style: {backgroundColor: '#FAFAFA', fontFamily: 'Arial'}, hideProgressBar: true});
+                Swal.fire("Message sent!", "", "success");
                 console.log("SUCCESS!", response.status, response.text);
-                setFormData({ fullName: '', contactNumber: '', message: '' });
+                closeUI();
             })
             .catch((error) => {
                 setIsLoading(false);

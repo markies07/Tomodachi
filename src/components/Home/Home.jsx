@@ -26,10 +26,8 @@ function Home() {
 
 
     useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+        AOS.init({ duration: 1000, once: false });
     }, []);
-
-
 
     return (
         <div className='pt-19 pb-10'>
