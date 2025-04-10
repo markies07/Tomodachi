@@ -32,10 +32,13 @@ function Home() {
     return (
         <div className='pt-19 pb-10'>
             {/* BANNER */}
-            <img src={banner} alt="" />
+            <div className='relative'>
+                <img src={banner} alt="" />
+                <p style={{textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)"}} className='absolute -bottom-2 w-full sm:bottom-2 md:bottom-0 lg:bottom-5 xl:bottom-7 lg:text-xl md:text-lg text-[#FF0000] font-extrabold flex justify-center'>Cavite Branch</p>
+            </div>
 
             {/* DOWN ANIMATION */}
-            <div className='w-full justify-center hidden lg:flex pb-7'>
+            <div className='w-full justify-center hidden lg:flex pb-7 pt-5'>
                 <img className='w-8 animate-bounce' src={down} alt="" />
             </div>
 

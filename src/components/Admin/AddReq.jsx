@@ -50,6 +50,7 @@ function AddReq({closeAddReq}) {
             const docRef = await addDoc(collection(db, "requirements"), {
                 name: name,
                 imageUrl: imageUrl,
+                order: 1
             });
     
             setReqName('');

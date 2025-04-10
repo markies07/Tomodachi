@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Modal from './Modal';
-import { collection, onSnapshot, query } from 'firebase/firestore';
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { db } from '../../firebase';
 
 function Requirements() {
@@ -21,7 +21,7 @@ function Requirements() {
   },[])
 
   const subscribeToReq = () => {
-    const reqQuery = query(collection(db, 'requirements'));
+    const reqQuery = query(collection(db, 'requirements'), orderBy("order"));
 
     const unsubscribeReq = onSnapshot(reqQuery, (snapshot) => {
         setRequirements(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));

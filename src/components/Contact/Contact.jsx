@@ -21,7 +21,7 @@ function Contact() {
             <p className='font-bold lg:text-xl'>CONTACT US</p>
 
             <p className='font-extrabold text-3xl md:text-4xl text-[#FF0000] text-center pt-7'>Let's Talk</p>
-            <p className='text-sm md:text-base text-center pt-1 max-w-[30rem] mx-auto'>Because we know how important is for you to succeed, we have a offer for you that will bring you next to success!</p>
+            <p className='text-sm md:text-base text-center pt-1 max-w-[30rem] mx-auto'>Because we know how important it is for you to succeed, we have an offer for you that will bring you next to success!</p>
 
             <div className='pt-10 flex flex-col max-w-[35rem] md:max-w-[40rem] mx-auto md:flex-row gap-3'>
                 <div className='flex flex-col gap-3'>

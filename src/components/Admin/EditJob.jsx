@@ -162,7 +162,7 @@ function EditJob({ closeQual, jobID, setSelectedJob }) {
                         </div>
                     ))}
 
-                    <button onClick={addQualification} className="bg-blue-400 cursor-pointer hover:bg-blue-500 rounded-sm duration-150 text-xs sm:text-sm flex font-medium gap-2 justify-center items-center text-white px-3 py-2">
+                    <button onClick={addQualification} style={{display: isLoading ? 'none' : 'flex'}} className="bg-blue-400 cursor-pointer hover:bg-blue-500 rounded-sm duration-150 text-xs sm:text-sm font-medium gap-2 justify-center items-center text-white px-3 py-2">
                         <img className='w-5' src={add} alt="" />
                         Add Qualification
                     </button>
