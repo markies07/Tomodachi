@@ -14,7 +14,7 @@ function FileUpload({ onFileChange, fileName, setFileName }) {
 
     return (
         <div className="bg-[#D9D9D9] rounded-sm px-3 py-2 flex justify-between items-center w-full">
-            <span className="text-[#878787] truncate">{fileName || 'Attach your resume (doc/docx file only)'}</span>
+            <span className={`${fileName ? 'text-[#323232]' : 'text-[#878787]'} truncate`}>{fileName || 'Attach your resume (doc/docx file only)'}</span>
             <button
                 type="button"
                 onClick={() => fileInputRef.current.click()}
