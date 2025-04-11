@@ -52,8 +52,8 @@ function Home() {
                     <div className='flex flex-col md:pt-7 justify-center items-center md:gap-3 md:flex-row'>
                         <div className='w-[80%]  md:w-[50%] max-w-96 relative'>
                             <p className='font-extrabold pl-5 hidden md:block absolute -top-7 text-sm text-[#990000] pb-3 w-full text-start'>WHO WE ARE</p>
-                            <img className='w-[90%] mx-auto' src={image1} alt="" />
-                            <div className='w-[90%] -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
+                            <img className='w-[90%] rounded-sm mx-auto' src={image1} alt="" />
+                            <div className='w-[90%] rounded-sm -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
                         </div>
                         <p className=' md:px-0 leading-6 md:pl-10 w-[80%] md:w-[50%] pt-10 md:pt-0 text-sm text-center md:text-start '>
                             <span className='font-bold'>Tomodachi Global Resources Inc.</span> is a human resource company that was establish in 2014 and handles a wide array of services in the Philippines. Aside from providing our services to our clients being on call 24/7, we direct manage, control and supervise as Contract Manufacturer, in relation to the quality parameters and guidelines set ahead by our client.
@@ -75,8 +75,8 @@ function Home() {
                         </div>    
                         <div className='w-[80%] order-1 md:order-2 md:w-[50%] max-w-96 relative'>
                             <p className='font-extrabold hidden md:block absolute -top-7 text-sm text-[#990000] pb-3 w-full text-end'>WHAT WE DO</p>
-                            <img className='w-[90%] mx-auto' src={image2} alt="" />
-                            <div className='w-[90%] -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
+                            <img className='w-[90%] rounded-sm mx-auto' src={image2} alt="" />
+                            <div className='w-[90%] rounded-sm -z-10 h-full absolute -bottom-3 right-1 bg-[#990000]' />
                         </div>
                         
                     </div>
@@ -91,14 +91,14 @@ function Home() {
                 <div className='pt-10 w-[80%] md:w-full md:max-w-[50rem] max-w-96 flex flex-col gap-7 md:flex-row'>
 
                     {/* OUR MISSION */}
-                    <div data-aos="zoom-in" className='p-7 w-full flex flex-col items-center justify-center' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
+                    <div data-aos="zoom-in" className='p-7 rounded-sm w-full flex flex-col items-center justify-center' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
                         <img className='w-16' src={mission} alt="" />
                         <p className='font-bold text-[#990000] pt-3'>Our Mission</p>
                         <p className='text-center text-sm pt-5 leading-6'>We provide the most competitive and efficient workforce with personalized service according to our customers’ satisfaction.</p>
                     </div>
 
                     {/* OUR VISION */}
-                    <div data-aos="zoom-in" className='p-7 w-full flex flex-col items-center justify-center md:justify-start' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
+                    <div data-aos="zoom-in" className='p-7 rounded-sm w-full flex flex-col items-center justify-center md:justify-start' style={{boxShadow: '1px 1px 15px 2px rgba(0, 0, 0, 0.13)'}}>
                         <img className='w-20' src={vision} alt="" />
                         <p className='font-bold text-[#990000] pt-3'>Our Vision</p>
                         <p className='text-center text-sm pt-5 leading-6'>To be the global human resource provider of choice.</p>
