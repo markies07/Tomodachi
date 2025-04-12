@@ -23,7 +23,7 @@ function Home() {
     useEffect(() => {
         AOS.init({
           duration: 1000, // You can customize this
-          once: true, // Only animate once
+          once: false, // Only animate once
         });
       
         // 👇 This is important for first-load issues
