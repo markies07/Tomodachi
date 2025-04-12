@@ -21,9 +21,15 @@ import 'aos/dist/aos.css';
 function Home() {
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-        AOS.init({ duration: 1000, once: false });
-        AOS.refresh();
+        AOS.init({
+          duration: 1000, // You can customize this
+          once: true, // Only animate once
+        });
+      
+        // 👇 This is important for first-load issues
+        setTimeout(() => {
+          AOS.refresh();
+        }, 500);
     }, []);
 
     return (
