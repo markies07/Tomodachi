@@ -155,7 +155,7 @@ function JobsAdmin() {
                     <input 
                         value={searchTerm} 
                         onChange={handleSearch} 
-                        className='border-2 text-sm sm:text-base w-full py-1 pl-8 px-3 outline-none border-[#adadad] placeholder:text-[#adadad] rounded-sm' 
+                        className='border-2 text-sm text-[#990000] sm:text-base font-medium w-full py-1 pl-8 px-3 outline-none border-[#990000] placeholder:text-[#990000] capitalize rounded-sm' 
                         type="text" 
                         placeholder='Search Job' 
                     />
