@@ -35,7 +35,7 @@ function Login() {
                 </div>
             </div>
 
-            <button onClick={handleLogin} className='bg-[#FF2323] hover:bg-[#cd2e2e] duration-150 cursor-pointer text-white font-semibold rounded-sm px-7 py-1'>LOGIN</button>
+            <button type='submit' onClick={handleLogin} className='bg-[#FF2323] hover:bg-[#cd2e2e] duration-150 cursor-pointer text-white font-semibold rounded-sm px-7 py-1'>LOGIN</button>
 
         </div>
     )

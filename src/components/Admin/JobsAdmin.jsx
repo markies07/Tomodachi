@@ -317,7 +317,7 @@ function JobsAdmin() {
             </div>
 
             {/* LOGIN */}
-            <div className='hidden'>
+            <div>
                 <Login />
             </div>
         </div>

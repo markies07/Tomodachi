@@ -35,9 +35,9 @@ function Jobs() {
             setLoading(true);
 
             // Queries for each location
-            const jobsDasmaQuery = query(collection(db, "jobVacancies"), where("location", "==", "Dasmariñas"));
-            const jobsGentriQuery = query(collection(db, "jobVacancies"), where("location", "==", "General Trias"));
-            const jobsRosarioQuery = query(collection(db, "jobVacancies"), where("location", "==", "Rosario"));
+            const jobsDasmaQuery = query(collection(db, "jobVacancies"), where("location", "==", "Dasmariñas"), where("vacancies", '!=', '0'));
+            const jobsGentriQuery = query(collection(db, "jobVacancies"), where("location", "==", "General Trias"), where("vacancies", '!=', '0'));
+            const jobsRosarioQuery = query(collection(db, "jobVacancies"), where("location", "==", "Rosario"), where("vacancies", '!=', '0'));
 
             // Fetch all jobs in parallel
             const [dasmaSnapshot, gentriSnapshot, rosarioSnapshot] = await Promise.all([
