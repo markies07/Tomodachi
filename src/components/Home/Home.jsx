@@ -37,7 +37,7 @@ function Home() {
             {/* BANNER */}
             <div className='relative'>
                 <img src={banner} alt="" />
-                <p style={{textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)"}} className='absolute -bottom-2 w-full sm:bottom-2 md:bottom-0 lg:bottom-5 xl:bottom-7 lg:text-xl md:text-lg text-[#FF0000] font-extrabold flex justify-center'>Cavite Branch</p>
+                <p style={{textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)"}} className='absolute -bottom-2 w-full sm:bottom-2 md:bottom-0 lg:bottom-5 xl:bottom-7 lg:text-2xl md:text-xl text-[#FF0000] font-extrabold flex justify-center'>Cavite Branch</p>
             </div>
 
             {/* DOWN ANIMATION */}
