@@ -129,6 +129,7 @@ function AddJob({ closeAddJob, location, setLocation }) {
                 <div className='flex justify-center mt-7'>
                     <button
                         onClick={handleAddJob}
+                        disabled={loading}
                         className="bg-[#08aa00] text-white font-semibold text-xs sm:text-sm cursor-pointer 
                         hover:bg-[#3c8d39] duration-300 rounded-sm px-3 py-2"
                     >

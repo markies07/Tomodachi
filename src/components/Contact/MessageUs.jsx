@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import { notifyError, notifySuccess } from '../CustomToast';
 import FileUpload from './FileUpload';
 
-function MessageUs({ closeUI }) {
+function MessageUs({ closeUI, isApplying }) {
     const formRef = useRef();
     const [isLoading, setIsLoading] = useState(false);
     const [selectedFile, setSelectedFile] = useState(null);
@@ -128,7 +128,9 @@ function MessageUs({ closeUI }) {
                         required
                     />
 
-                    <FileUpload onFileChange={handleFileChange} fileName={fileName} setFileName={setFileName} />
+                    <div className={isApplying ? 'block' : 'hidden'}>
+                        <FileUpload onFileChange={handleFileChange} fileName={fileName} setFileName={setFileName} />
+                    </div>
 
                     <button
                         type="submit"

@@ -3,16 +3,23 @@ import close from './assets/close.svg'
 import check from './assets/check.svg'
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
+import MessageUs from '../Contact/MessageUs';
 
 function Qualifications({closeQual, jobID, setSelectedJob}) {
 
     const [job, setJob] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const [isMessageOpen, setIsMessageOpen] = useState(false);
+    const isApplying = true;
 
     const closeWindow = () => {
         closeQual();
         setSelectedJob(null);
         setIsLoading(true);
+    }
+
+    const toggleMessage = () => {
+        setIsMessageOpen(!isMessageOpen);
     }
 
     useEffect(() => {
@@ -55,7 +62,16 @@ function Qualifications({closeQual, jobID, setSelectedJob}) {
                     ))}
 
                 </div>
+
+                <div className='mt-5 flex justify-center'>
+                    <button onClick={toggleMessage} className={`${isLoading ? 'hidden' : 'block'} bg-green-600 hover:bg-green-700 duration-150 text-white rounded-md cursor-pointer px-4 py-2 text-xs sm:text-sm font-semibold`}>Apply Now</button>
+                </div>
                     
+            </div>
+
+            {/* MESSAGE US */}
+            <div className={isMessageOpen ? 'block' : 'hidden'}>
+                <MessageUs closeUI={toggleMessage} isApplying={isApplying} />
             </div>
         </div>
     )

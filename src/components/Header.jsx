@@ -32,7 +32,7 @@ function Header() {
 
             {/* ADMIN NAV */}
             <div className={isAdmin ? 'block' : 'hidden'}>
-                <p onClick={goTo} className='underline cursor-pointer font-semibold text-[#FF0000] text-sm sm:text-base'>View as Applicant</p>
+                <p onClick={goTo} className='underline cursor-pointer font-semibold text-[#d70000] text-sm sm:text-base'>View as Applicant</p>
             </div>
 
             <div className={isAdmin ? 'hidden' : 'block'}>
