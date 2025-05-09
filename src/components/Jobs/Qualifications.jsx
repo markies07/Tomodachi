@@ -53,7 +53,7 @@ function Qualifications({closeQual, jobID, setSelectedJob}) {
                 {/* QUALIFICATIONS */}
                 <p className={isLoading ? 'hidden' : `font-bold text-sm pt-3`}>Qualifications:</p>
 
-                <div className='flex flex-col gap-4 pl-4 pt-5'>
+                <div className='flex flex-col gap-4 pl-4 pb-12 pt-5'>
                     {!isLoading && job?.qualifications?.map((qualification, index) => (
                         <div key={index} className='flex gap-3 items-start'>
                             <img className='w-4' src={check} alt="" />
@@ -63,7 +63,8 @@ function Qualifications({closeQual, jobID, setSelectedJob}) {
 
                 </div>
 
-                <div className='mt-5 flex justify-center'>
+                {/* APPLY NOW BUTTON */}
+                <div className='mt-5 absolute bottom-5 w-full left-0 flex justify-center'>
                     <button onClick={toggleMessage} className={`${isLoading ? 'hidden' : 'block'} bg-green-600 hover:bg-green-700 duration-150 text-white rounded-md cursor-pointer px-4 py-2 text-xs sm:text-sm font-semibold`}>Apply Now</button>
                 </div>
                     

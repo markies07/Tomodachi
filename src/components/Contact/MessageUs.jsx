@@ -95,7 +95,7 @@ function MessageUs({ closeUI, isApplying }) {
         <div className='fixed inset-0 flex justify-center items-center z-50 bg-black/80'>
             <div className="relative rounded-md p-5 bg-white w-[90%] sm:w-[35rem] flex flex-col">
                 <img className='w-8 cursor-pointer md:w-9 p-1 absolute top-4 right-4' src={close} onClick={closeUI} alt="Close" />
-                <p className='font-extrabold text-2xl text-[#990000] text-center pt-2'>Message Us</p>
+                <p className='font-extrabold text-2xl text-[#990000] text-center pt-2'>{isApplying ? 'Apply Job' : 'Message Us'}</p>
 
                 <form ref={formRef} onSubmit={handleSubmit} className='pt-5 text-sm sm:text-base flex flex-col gap-3'>
                     <div className='flex flex-col md:flex-row gap-3'>
